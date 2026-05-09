@@ -13,7 +13,9 @@ document.getElementById("form42").addEventListener("submit", function (e) {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    const newUser = [{ "name": name }, { "email": email }, { "message": message }];
+    const newUser = [{"id": id }, { "name": name }, { "email": email }, { "message": message }];
+    users.push(newUser);
+    id++;
 
     const response = fetch("/users", {
         method: "POST",
