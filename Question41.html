@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Question41.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <form method="post" id="pkmnform">
+            <fieldset>
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" required>
+            </fieldset>
+
+            <fieldset>
+                <label for="type">Type: </label>
+                <select name="type" id="type">
+                    <option value="water">Water</option>
+                    <option value="fire">Fire</option>
+                    <option value="rock">Rock</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <label for="atkpts">Attack Points: </label>
+                <input type="number" name="atkpts" id="atkpts" min="1">
+            </fieldset>
+
+            <button type="submit">Submit!</button>
+        </form>
+    </main>
+</body>
+
+</html>
